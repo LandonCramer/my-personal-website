@@ -7,7 +7,43 @@
     <title>My Personal Website</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div>
+    <div>
+        <!-- navigation bar -->
+        <ul>
+            <li><a href="#home">Experience</a></li>
+            <li><a href="#news">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul>
+     </div>
+     <!-- picture of me and bailey -->
+     <div class="my_picture">
+        <h1>Hey, I'm Landon Cramer</h1>
+        <p>Self driven,quick starter, passionate programmer with a curious mind who loves solving a very complex, very challenging real-world problem.</p>
+     </div>
+     <!-- About me section -->
+     <div class="about_me">
+        <h1>About Me</h1>
+        <p>I am an individual driven by a strong motivation to create positive change through technology and solve intricate problems. My journey has been marked by overcoming various challenges, including a 14.5-year sentence, which has instilled in me a deep determination, unwavering tenacity, and resilience crucial for thriving as a software engineer. I embrace my unique background as a source of strength, allowing me to approach projects with a unique perspective and a relentless drive to find innovative solutions. With my unwavering passion and commitment, I am eager to make a meaningful impact in the world of technology.
+        </p>
+     </div>
+        <!-- Form for input -->
+      <div class="container">
+        <form id="response-form" action="submit_response.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+    
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    
+          <input type="submit" value="Submit">
+        </form>
+        </div> 
+     </div>
     <script src="script.js"></script>
 </body>
 </html>
